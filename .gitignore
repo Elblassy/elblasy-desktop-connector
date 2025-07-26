@@ -45,7 +45,6 @@ ehthumbs.db
 Thumbs.db
 
 # Executables
-*.exe
 *.dll
 *.so
 *.dylib
