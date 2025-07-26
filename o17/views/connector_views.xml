@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.desktop.connector</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='general_settings']" position="inside">
+                <div id="desktop_connection">
+                    <block title="Desktop Connection" name="desktop_connection_setting_container">
+                        <setting id="desktop_connection_setting">
+                            <field name="desktop_connection_enabled"/>
+                            <label for="desktop_connection_enabled"/>
+                            <div class="text-muted">
+                                Enable desktop connection
+                            </div>
+                        </setting>
+                        <setting id="connection_code_setting">
+                            <field name="connection_code"/>
+                            <label for="connection_code"/>
+                            <div class="text-muted">
+                                Auto-generated connection code
+                            </div>
+                        </setting>
+                    </block>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
