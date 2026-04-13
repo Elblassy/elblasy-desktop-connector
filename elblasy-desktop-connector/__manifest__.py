@@ -2,7 +2,7 @@
     "name": "Elblasy Desktop Connector",
     "version": "1.0",
     "depends": ["base", "base_setup", "sale_management", "stock", "purchase"],
-    "author": "Elblasy",
+    "author": "elblasy.app",
     "category": "Tools",
     "website": "https://elblasy.app/",
     "license": "LGPL-3",
